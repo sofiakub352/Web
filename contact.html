@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/menu.css">
+      <link rel="stylesheet" type="text/css" href="css/form.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="js/sendform.js" async></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <title>WoW</title>
+   </head>
+   <body>
+         <div class="social-icons">
+               <a href="https://wa.me/0700000000" target="_blank"><img src="images/wapp-icon.png"></a>
+               <a href="https://www.facebook.com" target="_blank"><img src="images/fb-icon.png"></a>
+           </div>
+      <div class="header">
+            <div class="logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></div>
+         <div class="menu">
+            <div class="menu-elements">
+            <a class="menu-item" href="home.html">Home</a>
+            <div class="dropdown">
+               <button class="menu-item dropbtn">Content</button>
+               <div class="dropdown-content">
+                  <a href="alliance.html">Alliance Classes</a>
+                  <a href="horde.html">Horde Classes</a>
+                  <a href="leveling.html">Leveling Guide</a>
+                  <a href="dungeons.html">Dungeons&#38;Raids</a>
+               </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+      </div>
+    
+
+      <div id="homepage-title"><h1 class="title">Contact</h1></div>
+      <div class="page-container">
+         
+         <div class="full-side">
+               <div class="form-container">
+                   <form id="contactForm" name="contactForm"  method="post" action="#" onsubmit="return validForm();">
+                    <!--<label for="username">Username</label>-->
+                    <!--<input type="text" id="username" name="username" placeholder="Your username..">-->
+                    <!--<label for="email">Email</label>-->
+                    <!--<input type="text" id="email" name="email" placeholder="Your email..">-->
+                    <!--<label for="password">Secret</label>-->
+                    <!--<input type="password" id="password" name="password" placeholder="Your secret..">-->
+                    
+                    <!--<label for="realm">Realm</label>-->
+                    <!--<select id="realm" name="realm">-->
+                    <!--  <option value="mirage-raceway">Mirage Raceway</option>-->
+                    <!--  <option value="nethergarde-keep">Nethergarde Keep</option>-->
+                    <!--  <option value="pyrewood-village">Pyrewood Village</option>-->
+                    <!--  <option value="auberdine">Auberdine</option>-->
+                    <!--  <option value="everlook">Everlook</option>-->
+                    <!--  <option value="razorfen">Razorfen</option>-->
+                    <!--  <option value="lakeshire">Lakeshire</option>-->
+                    <!--</select>-->
+                    <!--<label for="class">Class</label><br>-->
+                    <!--<input type="checkbox" name="className" value="Druid"> Druid-->
+                    <!--<input type="checkbox" name="className" value="Hunter"> Hunter<br>-->
+                    <!--<input type="checkbox" name="className" value="Mage"> Mage-->
+                    <!--<input type="checkbox" name="className" value="Paladin"> Paladin<br>-->
+                    <!--<input type="checkbox" name="className" value="Priest"> Priest-->
+                    <!--<input type="checkbox" name="className" value="Rogue"> Rogue<br>-->
+                    <!--<input type="checkbox" name="className" value="Shaman"> Shaman-->
+                    <!--<input type="checkbox" name="className" value="Warlock"> Warlock<br>-->
+                    <!--<input type="checkbox" name="className" value="Warrior"> Warrior-->
+                    <!--<br>-->
+                    <!--<label>Experience</label><br>-->
+                    <!--<input type="radio" id="experience1" name="experience" value="New player"> New player-->
+                    <!--<input type="radio" id="experience2" name="experience" value="Old player"> Old player<br>-->
+                    <!--<br>-->
+                    <!--<label>Rate the game</label><br>-->
+                    <!--0&nbsp;<input id="rate" type="range" name="rate" min="0" max="10">&nbsp;10-->
+                    <!--<br>-->
+                    <!--<label for="message">Message</label>-->
+                    <!--<textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>-->
+                
+                    <!--<input id="submit" onclick="sendData()" type="button" value="Submit">-->
+                    </form>
+                 </div>
+      </div>
+   </div>
+      <div class="footer"><span>&copy; Copyright Kubinschi Sofia Maria 2019</span></div>
+    </body>
+    <script type="text/javascript" src="js/createform.js" async></script>
+</html>

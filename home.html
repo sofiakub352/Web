@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/menu.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <title>WoW</title>
+   </head>
+   <body>
+       <img id="planet" class="planet-img" src="images/planet.png" alt="planet">
+      <div class="header">
+            <div class="logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></div>
+         <div class="menu">
+            <div class="menu-elements">
+            <a class="menu-item" href="home.html">Home</a>
+            <div class="dropdown">
+               <button class="menu-item dropbtn">Content</button>
+               <div class="dropdown-content">
+                  <a href="alliance.html">Alliance Classes</a>
+                  <a href="horde.html">Horde Classes</a>
+                  <a href="leveling.html">Leveling Guide</a>
+                  <a href="dungeons.html">Dungeons&#38;Raids</a>
+               </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+      </div>
+    
+
+      <div id="homepage-title"><h1 class="title">World of Warcraft</h1></div>
+      <div class="page-container">
+         
+         <div class="left-side">
+             <div id="audioContainer">
+                 <!--<audio controls>-->
+                 <!--   <source src="music/loginmusic.mp3" type="audio/mpeg">-->
+                 <!--   Your browser does not support the audio element.-->
+                 <!--</audio>-->
+             </div>
+               
+               <p>World of Warcraft, often referred to as WoW, is a massively multiplayer online roleplaying game (MMORPG) set in the Warcraft universe. It is developed by Blizzard Entertainment and contains multiple expansions. The initial release is now sometimes known as "vanilla WoW" or "classic WoW".</p>
+               <p>As of 2010, World of Warcraft had more than 12 million monthly subscribers,[1][citation needed] and still holds the Guinness World Record for the world's largest and most popular MMORPG since 2009.[2] It also continues its further story development throughout its franchising, other than online media, such as Warcraft novels, comics, manga, RPG books, TCG, board games, and the Warcraft movie. Characters from the franchise have been included in other Blizzard games, including Hearthstone and Heroes of the Storm.</p>
+               <p>John Hight was announced as the Executive Producer of World of Warcraft at the opening ceremony of BlizzCon 2018, presumably taking over for J. Allen Brack.</p>
+               <h2>Gallery</h2>
+               <button id="showHideBtn" style="margin-bottom:20px" class="btn-blue" onclick="hideGallery()">Toggle Gallery</button>
+               <div id="showHideGallery" class=grid-gallery>
+                    <img id="deleteMe" src="images/1.jpg" alt="1">
+                    <img id="deleteMe" src="images/2.jpg" alt="2">
+                    <img id="deleteMe" src="images/3.jpg" alt="3">
+                    <img id="deleteMe" src="images/4.jpg" alt="4">
+                    <img id="deleteMe" src="images/5.jpg" alt="5">
+                    <img id="deleteMe" src="images/6.jpg" alt="6">
+               </div><br>
+               <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/d0B1AsdQDTY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+               
+             <div id="videoContainer">
+             </div>
+               
+               <h2>Expansions</h2>
+               <ul class="ulist"><li><h3>World of Warcraft: The Burning Crusade</h3></li>
+                  <li><h4>World of Warcraft: Wrath of the Lich King</h4></li>
+                  <li><h5>World of Warcraft: Cataclysm</h5></li>
+                  <li><h6>World of Warcraft: Mists of Pandaria</h6></li>
+                  <li><h5>World of Warcraft: Warlords of Draenor</h5></li>
+                  <li><h4>World of Warcraft: Legion</h4></li>
+                  <li><h3>World of Warcraft: Battle for Azeroth</h3></li>
+                  <li><h2>World of Warcraft: Shadowlands</h2></li></ul>
+                  
+                  
+            <div class="randomPick">
+             <h3>Don't know what to pick?</h3>
+             <div class="randomServer">
+                 <h4>Server</h4>
+                <button id="pickServer" class="btn-blue" onclick="getServer()">Pick Server</button>
+                <p id="serverResult"></p>
+             </div>
+             
+             <div class="randomFaction">
+                 <h4>Faction</h4>
+                <button id="pickFaction" class="btn-blue" onclick="getFaction()">Pick Faction</button>
+                <p id="factionResult"></p>
+             </div>
+             
+             <div class="randomClass">
+                 <h4>Class</h4>
+                <button id="pickClass" class="btn-blue" onclick="getClass()">Pick Class</button>
+                <p id="classResult"></p>
+             </div>
+         </div>
+         
+         <div class="playtime">
+            <h3>Playtime calculator</h3>
+            <label for="hours">Hours/week</label>
+            <input type="text" id="hours" name="hours" placeholder="Avg. hours/week..">
+            <label for="years">Years played</label>
+            <input type="text" id="years" name="years" placeholder="Years played..">
+            <button id="timeCalc" class="btn-blue" onclick="getTime()">See time</button>
+            <p id="timeResult"></p>
+         </div>
+
+         </div>
+
+         <div class="right-side">
+            <table class="about-table">
+               <tr><td colspan="2"><h2 class="title">About</h2></td></tr>
+               <tr><td class="center-img" colspan="2"><img src="images/game.png" alt="cover"></td></tr>
+               <tr><td>Developer(s)</td><td>Blizzard Entertainment</td></tr>
+               <tr><td>Publisher(s)</td><td>Vivendi Universal</td></tr>
+               <tr><td>Genre(s)</td><td>MMORPG</td></tr>
+            </table>
+         </div>
+         
+      </div>
+
+      <div class="footer"><span>&copy; Copyright Kubinschi Sofia Maria 2019</span></div>
+   </body>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</html>

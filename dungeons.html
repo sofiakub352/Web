@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/menu.css">
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <title>WoW</title>
+   </head>
+   <body>
+      <div class="header">
+            <div class="logo"><a href="home.html"><img src="images/logo.png" alt="logo"></a></div>
+         <div class="menu">
+            <div class="menu-elements">
+            <a class="menu-item" href="home.html">Home</a>
+            <div class="dropdown">
+               <button class="menu-item dropbtn">Content</button>
+               <div class="dropdown-content">
+                  <a href="alliance.html">Alliance Classes</a>
+                  <a href="horde.html">Horde Classes</a>
+                  <a href="leveling.html">Leveling Guide</a>
+                  <a href="dungeons.html">Dungeons&#38;Raids</a>
+               </div>
+            </div>
+            <a class="menu-item" href="contact.html">Contact</a>
+            </div>
+        </div>
+      </div>
+    
+
+      <div id="homepage-title"><h1 class="title">Dungeons&#38;Raids</h1></div>
+      <div class="page-container">
+         
+         <div class="full-side">
+               <h3>NUMBER / DUNGEON TITLE / RANDOM QUEUE / QUEST LEVEL / ENTER BY FOOT / LOCATION</h3>
+                <ol id="addRemoveDungeon">
+                    
+                </ol>
+               <button class="btn-blue dungeonBtn" onclick="addDungeon()">Show More</button>
+               <button class="btn-blue dungeonBtn" onclick="removeDungeon()">Show Less</button>
+               
+               <button id="lockBtn" class="green" onclick="lockBtn()">LOCK LINKS</button>
+      </div>
+   </div>
+      <div class="footer"><span>&copy; Copyright Kubinschi Sofia Maria 2019</span></div>
+   </body>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/dungeons.js" defer></script>
+</html>

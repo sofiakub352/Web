@@ -1,0 +1,235 @@
+.header {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    animation-name: headercolor;
+    animation-duration: 5s;
+    background-color: #0075a2;
+    animation-iteration-count:infinite;
+}
+.btn-blue {
+    background-color: #3e6380;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+@keyframes headercolor {
+        0%   {background: #0075a2;}
+        50%  {background: #03345a;}
+        100%  {background: #0075a2;}
+      }
+.logo {
+	width: 30%;
+	height: 100%;
+}
+.menu {
+	width: 70%;
+}
+.logo img {
+    width: auto;
+	max-height: 100%;
+}
+h1.title {
+    border-bottom: 1px solid black;
+}
+body {
+    margin: 0;
+    background: #e8e8e8;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.page-container {
+    padding: 30px;
+    background: #d0d0d0;
+    max-width: 1200px;
+    margin: auto;
+}
+.page-container .left-side {
+    width: 70%;
+}
+.page-container .right-side {
+    width: 30%;
+}
+.page-container {
+    display: flex;
+    width: 100%;
+}
+h1.title, h2.title {
+    text-align: center;
+}
+table.about-table {
+    width: 100%;
+}
+
+table.about-table img {
+    max-width: 100%;
+}
+
+table.about-table td {
+    width: 50%;
+}
+td.center-img {
+    text-align: center;
+}
+div#homepage-title h1 {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 50vw;
+}
+.logo img {
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+div#homepage-title {
+    padding: 0 30px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    background: #d0d0d0;
+    color: #004c82;
+    font-size: 22px;
+    font-weight: 600;
+}
+.footer {
+    background: #03345a;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+@media only screen and  (max-width: 600px) {
+    .menu, .footer {
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+    .header {
+        display: block;
+        width: 100%;
+    }
+
+    .page-container .left-side {
+        width: 100%;
+    }
+    .page-container .right-side {
+        width: 100%;
+    }
+    .page-container {
+        display: block;
+        width: 100%;
+    }
+    .menu-elements {
+        float: none !important;
+        text-align: center;
+    }
+}
+@media only screen and (min-width:600px) {
+    .header {
+        height: 120px;
+        width: 100%;
+    }
+}
+
+.social-icons {
+    position: fixed;
+    top: 40%;
+    left: -40px;
+    z-index: 999999;
+    background: #fff6f6;
+    padding: 5px;
+    border: 1px solid #d28383;
+    border-left: none;
+    border-right: 2px solid #d28383;
+    transition: left .4s ease-in-out;
+}
+.social-icons:hover {
+    left: 0px;
+}
+.social-icons img {
+    height: 35px;
+    display: block;
+    margin: 4px 0;
+}
+
+td.center-img img:hover {
+    transform: scale(1.02);
+}
+td.center-img img {
+    transition: transform .4s ease-in-out;
+}
+.ulist li:nth-child(2n) {
+    color: 
+    #064271;
+}
+.ulist li:nth-child(2n+1) {
+    color: 
+    #a34d24;
+}
+.footer span {
+    font-size: .9em;
+}
+audio {
+    max-width: 100%;
+}
+.header, div#homepage-title, .page-container, .footer {
+    box-sizing: border-box;
+}
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.grid-gallery img {
+    width: 100%;
+}
+iframe {
+    border: none;
+    max-width: 100%;
+    min-height: auto;
+}
+@media (max-width: 600px) {
+    .planet-img {
+        display:none;
+    }
+}
+.planet-img {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 120px;
+    height: 120px;
+}
+#videoContainer, video {
+    width: 100%;
+}
+
+#lockBtn {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+#lockBtn.green {
+    background: green;
+}
+#lockBtn.red {
+    background: red;
+}

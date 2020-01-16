@@ -1,0 +1,36 @@
+var change = 0;
+function changeBtn() {
+    var list = document.getElementById("showHideGallery");
+    if (change == 0) {
+        document.getElementById("showHideBtn").setAttribute("onclick", "showGallery()");
+        //alert('change to show');
+        change = 1;
+        return;
+    } 
+    if (change == 1){
+        document.getElementById("showHideBtn").setAttribute("onclick", "hideGallery()");
+        //alert('change to hide');
+        change = 0;
+    }
+}
+
+var images = [];
+function hideGallery() {
+    var list = document.getElementById("showHideGallery");
+    var img = list.lastElementChild;
+    while (img) {
+        images.push(img);
+        list.removeChild(img); 
+        img = list.lastElementChild;
+    }
+    changeBtn();
+}
+function showGallery() {
+    var list = document.getElementById("showHideGallery");
+    var img;
+    while (images[0]) {
+        img = images.pop();
+        list.appendChild(img);
+    }
+    changeBtn();
+}
